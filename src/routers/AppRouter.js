@@ -2,12 +2,10 @@ import React from 'react';
 import {Router, Route, Switch} from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import DashboardPage from '../components/DashboardPage';
-
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
-import PrivacyPolicy from '../components/PrivacyPolicy';
 export const history = createHistory();
 
 const AppRouter = () => (
@@ -16,7 +14,6 @@ const AppRouter = () => (
             <Switch>
                 <PublicRoute path="/" component={LoginPage} exact={true} /> 
                 <PrivateRoute path="/dashboard" component={DashboardPage} />   
-                <PrivateRoute path="/privacypolicy" component={PrivacyPolicy} />       
                 <PublicRoute component={NotFoundPage} />    
                  
             </Switch>
