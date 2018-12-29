@@ -1,7 +1,7 @@
 # React With Firebase Boilerplate
 
 ### Version
-1.0.0
+2.0.0
 
 
 ### Installation
